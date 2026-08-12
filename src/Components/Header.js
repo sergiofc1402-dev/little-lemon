@@ -1,4 +1,4 @@
-import logo from "./Assets/Logo .svg";
+import logo from "../Assets/Logo .svg";
 import Nav from "./Nav";
 
 function Header () {

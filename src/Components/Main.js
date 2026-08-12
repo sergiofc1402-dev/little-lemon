@@ -1,12 +1,19 @@
-import restaurantDish from "./Assets/restauranfood.jpg"
-import GreekSalad from "./Assets/greek salad.jpg"
-import Bruscheta from "./Assets/bruchetta.svg"
-import LemonDessert from "./Assets/lemon dessert.jpg"
-
+import restaurantDish from "../Assets/restauranfood.jpg"
+import GreekSalad from "../Assets/greek salad.jpg"
+import Bruscheta from "../Assets/bruchetta.svg"
+import LemonDessert from "../Assets/lemon dessert.jpg"
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./Homepage";
+import Bookingpage from "./Bookingpage";
 
 function Main () {
     return (
         <main>
+            <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/bookings" element={<Bookingpage />} />
+
+            </Routes>
             {/*HERO*/}
             <section className="hero">
                 <div className="hero-content">
