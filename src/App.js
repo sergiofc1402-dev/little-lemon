@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import "./App.css";
-
+import "./Confirmation.css";
 
 function App() {
   return (

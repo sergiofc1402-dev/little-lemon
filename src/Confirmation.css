@@ -1,0 +1,76 @@
+body {
+  background-color: #EDEFEE;
+  font-family: 'Karla', sans-serif;
+}
+
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.confirmation-card {
+  background: #FFFFFF;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  background-color: #495E57;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  color: #495E57;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.reservation-details {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  background: #F4F5F4;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 24px 0;
+  text-align: left;
+  flex-direction: column;
+}
+
+.btn-primary {
+  background-color: #F4CE14;
+  color: #333333;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #495E57;
+  color: #495E57;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+}

@@ -3,8 +3,7 @@ import { useReducer } from "react";
 import { Routes, Route } from "react-router-dom";
 import Homepage from "./Homepage";
 import Bookingpage from "./Bookingpage";
-import Hero from "./Hero";
-import Cards from "./SpcialCards";
+
 import { initializeTimes, updateTimes } from "./BookingUtils";
 import ConfirmedBooking from "./ConfirmedBooking";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +16,9 @@ const navigate = useNavigate();
 function submitForm(formData){
     const success = submitAPI(formData);
     if (success) {
-        navigate("/booking-confirmed");
+        navigate("/booking-confirmed", {
+            state: formData
+        });
     }
 }
     const [availableTimes, dispatch] = useReducer (
@@ -31,8 +32,7 @@ function submitForm(formData){
                 <Route path="booking-confirmed" element= {<ConfirmedBooking />}/>
             </Routes>
 
-            <Hero />
-            <Cards />
+            
             
         </main>
             );

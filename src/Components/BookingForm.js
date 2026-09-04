@@ -38,11 +38,12 @@ occasion !== "";
 
 return(
     <form
-    onSubmit={handleSubmit}>
+    onSubmit={handleSubmit}
+    className="booking-Form">
         
     <fieldset>
         <div>
-          <label htmlFor="res-date">Date</label>
+          <label htmlFor="res-date">Date</label> 
        <input
   type="date"
   id="res-date"
@@ -77,10 +78,10 @@ return(
         </div>  
 
 <div>
-    <label htmlFor="occasion">occasion</label>
+    <label htmlFor="occasion">Occassion</label>
     <select id="occasion" value={occasion} onChange={(event) => setOcassion(event.target.value)} required>
          <option value="">Select an occasion</option>
-        <option value="Birthday">Birhday</option>
+        <option value="Birthday">Birthday</option>
         <option value="Anniversary">Anniversary</option>
         <option value="Nospecial">No special occassion</option>
     </select>

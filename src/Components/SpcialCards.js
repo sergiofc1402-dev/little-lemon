@@ -71,8 +71,7 @@ function Cards(){
  
                 </div>
             </section>
-            <h1>hi little lemon</h1>
-            
+
     </main>
     )
 }
